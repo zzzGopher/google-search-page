@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1;	
 }
 ol, ul {
 	list-style: none;
@@ -47,6 +47,7 @@ table {
 	border-spacing: 0;
 }
 
+/*header is top main flex box*/
 #header{
 
 	display: flex;
@@ -58,14 +59,39 @@ table {
 
 }
 
+#logoflexbox{
+
+	display: flex;
+    flex-direction: row;
+    width: 92px;
+    height: 36px;
+    justify-self: center;
+    padding: 4px 28px 0px 24px;
+    margin-top: 21px;
+
+}
+
+img{
+
+display: inline-block;
+
+}
+
 .searchboxflex{
 
 	
-		display: flex;
-		justify-content: center;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 3em;
+	display: flex;
+    align-self: center;
+    width: 690px;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin-top: -3%;
+    margin-left: .5%;
+	
 
 	}
 
@@ -75,7 +101,36 @@ table {
 
 	
 	display: flex;
-    width: 20%;
-    height: 20%;
+    width: inherit;
+    height: inherit;
+    border: none;
+	background: transparent;
+	
+}
+
+/* Right Flex box  */
+
+#flex-container-right{
+
+	display: flex;
+    width: 15%;
+    height: 35%;
+    margin: auto;
+    margin-left: 50%;
+    align-items: center;
+    padding-left: 200px;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
 
 }
+
+.app-square{
+
+	
+    height: 24px;
+    width: 24px;
+
+}
+
+
