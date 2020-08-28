@@ -157,11 +157,11 @@ align-items: center;
     display: flex;
 height: 3rem;
 width: 50rem;
-margin-top: 3.4%;
 position: static;
-margin-left: -46.2em;
-padding-top: 1.8em;
-
+margin-left: 0px;
+position: absolute;
+margin-right: 75%;
+margin-top: 25%;
 }
 
 @media only screen and (max-width: 997px)  {
@@ -169,9 +169,9 @@ padding-top: 1.8em;
 
 
 
-margin-top: 12%;
+margin-top: 25%;
 scale: 100%;
-position: fixed;
+position: absolute;
 margin-left: 3%;
 width: 47em;
 height: 3em;
@@ -292,16 +292,17 @@ text-decoration: none;
 #flex-container-right{
 
     display: flex;
-    width: 15%;
-    height: 35%;
-    align-items: center;
-    justify-items: center;
-    justify-content: end;
-    align-content: space-evenly;
-    position: relative;
-    margin-left: inherit;
-    padding-right: 50px;
-    margin-top: 1%;
+width: 15%;
+height: 35%;
+align-items: center;
+justify-items: center;
+justify-content: end;
+align-content: space-evenly;
+position: relative;
+margin-left: inherit;
+padding-right: 50px;
+margin-top: 1%;
+min-width: 160px;
 }
 
 .app-square{
@@ -341,6 +342,7 @@ border-radius: 80%;
     border-radius: 4px;
     line-height: 19px;
     white-space: nowrap;
+    min-width: 30%;
 }
 
 .sign-in-button:hover{
@@ -383,9 +385,10 @@ height: 2614px;
 margin-left: 180px;
 margin-right: 264px;
 display: grid;
-grid-template-rows: repeat(auto-fill, minmax(8rem, 1fr));
+grid-template-rows:  repeat(auto-fill, minmax(8rem, 1fr));
 grid-gap: 10px;
 justify-items: center;
+position: relative;
 
 }
 
@@ -408,4 +411,27 @@ h3{
     color: #4d5156;
     font-size: 14px;
 line-height: 18px;
+}
+
+.video-box{
+display: flex;
+flex-direction: row;
+width: 100%;
+position: relative;
+align-content: stretch;
+
+}
+
+.vidgrid{
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+h4{
+    z-index: 10;
+    height: 10%;
+    grid-row: 3;
 }
